@@ -1,22 +1,12 @@
+body{
+  background-color: rgba(228, 228, 228, 0.945);
+}
 img{
   box-sizing: border-box;
+  height: 100px;
   width: 200px;
-  border: 10px solid darkolivegreen;
-  border-bottom: none;
-  border-left-style: groove;
-  padding: 20px 50px 5px 0;
-  margin: 30px;
-  background-color: aqua;
-}
-span{
-  border: 6px solid blue;
-  padding: 30px;
-  margin: 30px;
-}
-div{
-  box-sizing: border-box;
-  width: 300px;
-  border: 6px solid greenyellow;
-  padding: 30px;
-  margin: 30px;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 2px;
+  background-color: white;
 }
