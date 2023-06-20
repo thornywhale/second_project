@@ -1,42 +1,16 @@
 :root{
-  font-size: 18px;
+  font-size: 20px;
 }
 *{
   box-sizing: border-box;
 }
-p:hover{
-  color: fuchsia;
-}
 body{
   padding: 0;
   margin: 0;
-
-  font-family: serif;
   background-color: rgba(228, 228, 228, 0.945);
 }
-a:-webkit-any-link{
+/* a:-webkit-any-link{
   color: wheat;
-}
-a:link{
-  color: wheat;
-a:visited{
-  color: grey;
-}
-a:hover{
-  color: red;
-}
-a:active{
-  color: blue;
-}
-}
-#container{
-  width: 95%;
-  padding: 3%;
-  border: 1px solid red;
-  margin: auto;
-}
-#container p{
-  background-color: yellow;
 }
 #container p:last-child{
   background-color: aquamarine;
@@ -53,69 +27,17 @@ a:active{
 }
 #container p+p{
   background-color: chartreuse;
-}
-#container>p~blockquote{
-  background-color: forestgreen;
-}
-.block{
-  border: 3px solid blue;
-}
-a{
-  color: inherit;
-}
-a[target="_blank"]{
-  font-size: 2em;
-}
-section{
-  text-align: center;
-}
-img{
-  box-sizing: border-box;
-  display: inline-block;
-  width: 250px;
-  height: 150px;
-  padding: 10px;
-  border: 1px solid black;
-  border-radius: 2px;
-  margin: 2px;
-
-  object-fit: cover;
-  box-shadow: 5px goldenrod;
-  cursor: pointer;
-
-  color: aquamarine;
-  background-color: white;
-
-  text-align: center;
-  text-decoration: none;
-
-  font-family: 'Courier New', Courier, monospace;
-}
+} */
 table{
-  min-width: 600px;
+  min-width: 800px;
   width: 70%;
+  border: none;
   margin: auto;
-  border: 2px solid red;
   border-collapse: collapse;
-  border-spacing: 12px; /* works if border-collapse: separate; */
 }
 th,
 td{
-  border: 2px solid darkblue
-}
-td{
-  min-width: 20%;
-  vertical-align: bottom;
-}
-p{
-  margin: 0;
-}
-.first-col{
-  width: 150px;
-}
-caption{
-  caption-side: bottom;
-  text-align: right;
+  border: 2px solid;
 }
 li:nth-child(even){
   background-color: coral;
