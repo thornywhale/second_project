@@ -1,5 +1,11 @@
+:root{
+  font-size: 18px;
+}
 *{
   box-sizing: border-box;
+}
+p:hover{
+  color: fuchsia;
 }
 body{
   padding: 0;
@@ -7,6 +13,21 @@ body{
 
   font-family: serif;
   background-color: rgba(228, 228, 228, 0.945);
+}
+a:-webkit-any-link{
+  color: wheat;
+}
+a:link{
+  color: wheat;
+a:visited{
+  color: grey;
+}
+a:hover{
+  color: red;
+}
+a:active{
+  color: blue;
+}
 }
 #container{
   width: 95%;
@@ -17,8 +38,18 @@ body{
 #container p{
   background-color: yellow;
 }
+#container p:last-child{
+  background-color: aquamarine;
+}
+#container p:nth-child(2){
+  background-color: aqua;
+}
+#container p:nth-child(2):focus{
+  color: white;
+}
 #container>p{
   background-color: pink;
+  font-size: 1.5rem;
 }
 #container p+p{
   background-color: chartreuse;
@@ -28,6 +59,9 @@ body{
 }
 .block{
   border: 3px solid blue;
+}
+a{
+  color: inherit;
 }
 a[target="_blank"]{
   font-size: 2em;
@@ -82,4 +116,13 @@ p{
 caption{
   caption-side: bottom;
   text-align: right;
+}
+li:nth-child(even){
+  background-color: coral;
+}
+li:nth-child(odd){
+  background-color: darkkhaki;
+}
+li:nth-child(3n+2){
+  background-color: darkolivegreen;
 }
