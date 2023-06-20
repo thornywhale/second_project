@@ -5,7 +5,7 @@
 body{
   padding: 0;
   margin: 0;
-  background-color: rgba(200, 255, 0, 0.945);
+  background-color: rgba(255, 255, 255, 0.945);
 }
 table{
   min-width: 800px;
@@ -19,18 +19,53 @@ button{
   text-transform: uppercase;
 }
 thead{
-  background-color: rgb(17, 17, 87);
-  color: white;
-}
-tr:nth-child(2n+4){
-  background-color: rgb(177, 177, 177);
+  background-color: rgb(108, 108, 212);
+  color: rgb(255, 255, 255);
 }
 td:nth-child(1){
   text-align: left;
 }
-td:nth-child(odd){
-  background-color: rgb(197, 197, 197, 60%);
+thead>tr:nth-child(2){
+  font-size: 25px;
 }
-td:nth-child(even){
- background-color: rgb(238, 238, 238, 60%);
+
+
+thead>tr:nth-child(1)>th:first-child{
+  background-color: rgb(151, 206, 206);
+}
+thead>tr:nth-child(1)>th:nth-child(2),
+thead>tr:nth-child(2)>th:nth-child(1),
+thead>tr:nth-child(3)>th:nth-child(1){
+  background-color: rgb(90, 165, 165);
+}
+thead>tr:nth-child(1)>th:nth-child(3),
+thead>tr:nth-child(2)>th:nth-child(2),
+thead>tr:nth-child(3)>th:nth-child(2){
+  background-color: rgb(77, 121, 121);
+}
+thead>tr:nth-child(1)>th:nth-child(4),
+thead>tr:nth-child(2)>th:nth-child(3),
+thead>tr:nth-child(3)>th:nth-child(3){
+  background-color: rgb(62, 95, 95);
+}
+thead>tr:nth-child(1)>th:nth-child(5),
+thead>tr:nth-child(2)>th:nth-child(4),
+thead>tr:nth-child(3)>th:nth-child(4){
+  background-color: rgb(38, 54, 54);
+}
+
+
+tbody,
+tfoot{
+  background-color: rgb(202, 202, 202);
+}
+tbody>tr:nth-child(odd)>td:nth-child(even),
+tbody>tr:nth-child(even)>td:nth-child(odd){
+  background-color: rgba(102, 102, 102, 0.534);
+}
+tfoot>tr>td:nth-child(odd){
+  background-color: rgb(202, 202, 202);
+}
+tfoot>tr>td:nth-child(even){
+  background-color: rgba(102, 102, 102, 0.534);
 }
