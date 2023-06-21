@@ -1,0 +1,85 @@
+*{
+  box-sizing: border-box;
+  text-align: center;
+}
+*:is(td),
+*:is(th){
+  padding: 10px;
+}
+body{
+  padding: 0;
+  margin: 0;
+  background-color: rgba(255, 255, 255, 0.945);
+}
+table{
+  min-width: 800px;
+  width: 70%;
+  border: none;
+  margin: auto;
+  margin-top: 20px;
+  border-collapse: collapse;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+button{
+  text-transform: uppercase;
+}
+thead{
+  background-color: rgb(108, 108, 212);
+  color: rgb(255, 255, 255);
+}
+td:nth-child(1){
+  text-align: left;
+}
+thead>tr:nth-child(2){
+  font-size: 25px;
+}
+
+
+thead>tr:nth-child(1)>th:first-child{
+  background-color: rgb(151, 206, 206);
+  border-top-left-radius: 10%;
+}
+thead>tr:nth-child(1)>th:nth-child(2),
+thead>tr:nth-child(2)>th:nth-child(1),
+thead>tr:nth-child(3)>th:nth-child(1){
+  background-color: rgb(90, 165, 165);
+}
+thead>tr:nth-child(1)>th:nth-child(3),
+thead>tr:nth-child(2)>th:nth-child(2),
+thead>tr:nth-child(3)>th:nth-child(2){
+  background-color: rgb(77, 121, 121);
+}
+thead>tr:nth-child(1)>th:nth-child(4),
+thead>tr:nth-child(2)>th:nth-child(3),
+thead>tr:nth-child(3)>th:nth-child(3){
+  background-color: rgb(62, 95, 95);
+}
+thead>tr:nth-child(1)>th:nth-child(5),
+thead>tr:nth-child(2)>th:nth-child(4),
+thead>tr:nth-child(3)>th:nth-child(4){
+  background-color: rgb(38, 54, 54);
+}
+thead>tr:nth-child(1)>th:nth-child(5){
+  border-top-right-radius: 25%;
+}
+
+tbody,
+tfoot{
+  background-color: rgb(202, 202, 202);
+}
+tbody>tr:nth-child(odd)>td:nth-child(even),
+tbody>tr:nth-child(even)>td:nth-child(odd){
+  background-color: rgba(102, 102, 102, 0.534);
+}
+tfoot>tr>td:nth-child(odd){
+  background-color: rgb(202, 202, 202);
+}
+tfoot>tr>td:nth-child(even){
+  background-color: rgba(102, 102, 102, 0.534);
+}
+tfoot>tr:last-child{
+  border-bottom-right-radius: 10%;
+}
+tfoot>tr:first-child{
+  border-bottom-left-radius: 10%;
+}
